@@ -10,7 +10,7 @@ provider "random" {
 
 resource "aws_lightsail_key_pair" "key_pair" {
   name       = "${var.name}-instance-key"
-  public_key = "${file("${var.public_key_path}")}"
+  public_key = file("${var.public_key_path}")
   //public_key = "${file("~/.ssh/.pub")}"
 }
 
