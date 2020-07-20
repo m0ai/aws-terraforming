@@ -28,6 +28,6 @@ resource "aws_lightsail_static_ip" "ip" {
 }
 
 resource "aws_lightsail_static_ip_attachment" "at" {
-  static_ip_name = "${aws_lightsail_static_ip.ip.id}"
-  instance_name  = "${aws_lightsail_instance.instance.id}"
+  static_ip_name = aws_lightsail_static_ip.ip.id
+  instance_name  = aws_lightsail_instance.instance.id
 }
