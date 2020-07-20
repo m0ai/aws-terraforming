@@ -20,7 +20,7 @@ resource "aws_lightsail_instance" "instance" {
   blueprint_id      = var.blueprint_id
   bundle_id         = var.bundle_id
   key_pair_name     = aws_lightsail_key_pair.key_pair.name
-  tags = var.tags
+  tags              = var.tags
 }
 
 resource "aws_lightsail_static_ip" "ip" {

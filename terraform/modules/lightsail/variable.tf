@@ -4,11 +4,11 @@ variable "aws_region" {
 }
 
 variable "public_key_path" {
-  type    = string
+  type = string
 }
 
 variable "tags" {
-  type    = map
+  type = map
 }
 
 variable "name" {
@@ -17,16 +17,16 @@ variable "name" {
 }
 
 variable "availability_zone" {
-  type = string
+  type    = string
   default = "ap-northeast-2"
 }
 
 variable "bundle_id" {
-  type = string
+  type    = string
   default = "nano_2_0"
 }
 
 variable "blueprint_id" {
-  type = string
+  type    = string
   default = "amazon_linux_2018_03_0_2"
 }
