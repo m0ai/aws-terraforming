@@ -23,7 +23,7 @@ variable "availability_zone" {
 
 variable "bundle_id" {
   type = string
-  default = "nano_2.0"
+  default = "nano_2_0"
 }
 
 variable "blueprint_id" {
