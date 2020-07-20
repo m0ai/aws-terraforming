@@ -17,8 +17,8 @@ resource "aws_lightsail_key_pair" "key_pair" {
 resource "aws_lightsail_instance" "instance" {
   name              = "${var.name}_lightsail_instance"
   availability_zone = var.availability_zone
-  blueprint_id      = "string"
-  bundle_id         = "string"
+  blueprint_id      = var.blueprint_id
+  bundle_id         = var.bundle_id
   key_pair_name     = aws_lightsail_key_pair.key_pair.name
   tags = var.tags
 }
